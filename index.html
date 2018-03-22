@@ -6,27 +6,41 @@ THIS PROJECT HANDLED ON BY
 -SAMED BICER
 -->
 <head>
-<link rel="stylesheet" href="css/bootstrap.min.css"/>
+  
+  <title>CarPlate</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+  </head>
 
 <html>
 <body>
-
-<center><h1>Car Plate Program</h1></center>
-<form name="carplateprg" action="" method="post">  
-<div style="background-color:lightblue">
+<div class="containter">
 <center>
+<h1>Car Plate Program</h1>
 
+<form name="carplateprg" action="" method="post">  
+<div class="form-group row">
+    <label for="carmodel">Car Model<label>
 	<input type="text" name="carmodel" id="carmodel" placeholder="Car Model">
-</br>	<input type="text" name="carplate" id="carplate" placeholder="Car Plate">
-</br>	<input type="text" name="fullname" id="fullname" placeholder="Fullname Of the Car Driver">
+</div>	
+<div class="form-group row">	
+	<label for="carplate">Car Plate<label>
+	<input type="text" name="carplate" id="carplate" placeholder="Car Plate">
+</div>	
+<div class="form-group row">	
+	<label for="carmodel">Full Name<label>
+	<input type="text" name="fullname" id="fullname" placeholder="Fullname Of the Car Driver">
+</div>
+  
+  <div class="form-group row">
+	<label for="submit">Submit</label>
+	<button type="submit" name="submit" id="submit">Submit</input>
 
-  
-  
-</center>
+
 </div>
 </form>
-
+</div>
 </body>
 </html>
