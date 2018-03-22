@@ -16,31 +16,53 @@ THIS PROJECT HANDLED ON BY
 
 <html>
 <body>
-<div class="containter">
-<center>
-<h1>Car Plate Program</h1>
+	<form class="form-horizontal"  action="" method="post">  
+	<div class="container">
+	<div class="row">
+	<h1>Car Plate Program</h1>
+	</div>	
 
-<form name="carplateprg" action="" method="post">  
-<div class="form-group row">
-    <label for="carmodel">Car Model<label>
-	<input type="text" name="carmodel" id="carmodel" placeholder="Car Model">
-</div>	
-<div class="form-group row">	
-	<label for="carplate">Car Plate<label>
-	<input type="text" name="carplate" id="carplate" placeholder="Car Plate">
-</div>	
-<div class="form-group row">	
+	 
+	<!--Car Model Row-->
+	<div class="form-group form-group-sm col-sm-6">
+	<div class="row">
+    <label for="carmodel" class="col-sm-4 col-form-label">Car Model</label>
+	<div class="col-sm-10">
+	<input type="text" class="form-control" name="carmodel" id="carmodel" placeholder="Car Model">
+	</div>
+	</div>
+	</div>
+	<!--Car Model Row-->
+	
+	
+	<!-- Car Plate Row-->
+	<div class="form-group form-group-sm col-sm-6">
+	<div class="row">	
+	<label for="carplate" class="col-sm-4 col-form-label">Car Plate<label>
+	<div class="col-sm-10">
+	<input type="text" class="form-control" name="carplate" id="carplate" placeholder="Car Plate">
+	</div>	
+	</div>
+	</div>
+	<!-- Car Plate Row-->
+	
+	
+	<!--Fullname Row-->
+	<div class="row">	
 	<label for="carmodel">Full Name<label>
 	<input type="text" name="fullname" id="fullname" placeholder="Fullname Of the Car Driver">
-</div>
+	</div>
+	<!--Fullname Row-->
   
-  <div class="form-group row">
+	<!--Submit Row-->
+	<div class="form-group row">
 	<label for="submit">Submit</label>
 	<button type="submit" name="submit" id="submit">Submit</input>
-
-
+	</div>
+	<!--Submit Row-->
 </div>
 </form>
+
 </div>
 </body>
 </html>
