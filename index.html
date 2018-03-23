@@ -11,16 +11,24 @@ THIS PROJECT HANDLED ON BY
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<style>
+	.pullRight{
+	float:right;
+	}
+	</style>
   </head>
 
 <html>
 <body>
-	<form class="form-horizontal"  action="" method="post">  
+
 	<div class="container">
+	<form class="form-horizontal"  action="" method="post">  
+	
 	
 	<div class="row">
-	<h1>Car Plate Program</h1>
+	<div class="col-sm-12">
+	<center><h1 class="display-1" >Car Plate Program</h1></center>
+	</div>
 	</div>	
 
 	 
@@ -28,7 +36,7 @@ THIS PROJECT HANDLED ON BY
 	<div class="form-group form-group-sm col-sm">
 	<div class="row">
     <label for="carmodel" class="col-sm-4 col-form-label">Car Model</label>
-	<div class="col-sm-10">
+	<div class="col-sm-12">
 	<input type="text" class="form-control" name="carmodel" id="carmodel" placeholder="Car Model" />
 	</div>
 	</div>
@@ -36,11 +44,12 @@ THIS PROJECT HANDLED ON BY
 	<!--Car Model Row-->
 	
 	
+	
 	<!-- Car Plate Row-->
 	<div class="form-group form-group-sm col-sm">
 	<div class="row">	
-	<label for="carplate" class="col-sm-4 col-form-label">Car Plate<label>
-	<div class="col-sm-10">
+    <label for="carplate" class="col-sm-4 col-form-label">Car Plate</label>
+	<div class="col-sm-12">
 	<input type="text" class="form-control" name="carplate" id="carplate" placeholder="Car Plate" />
 	</div>	
 	</div>
@@ -51,8 +60,8 @@ THIS PROJECT HANDLED ON BY
 	<!--Fullname Row-->
 	<div class="form-group form-group-sm col-sm">
 	<div class="row">	
-	<label for="fullname" class="col-sm-4 col-forml-label">Full Name<label>
-	<div class="col-sm-10">
+    <label for="fullname" class="col-sm-4 col-form-label">Full Name</label>
+	<div class="col-sm-12">
 	<input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname Of the Car Driver" />
 	</div>
 	</div>
@@ -61,8 +70,10 @@ THIS PROJECT HANDLED ON BY
   
 	<!--Submit Row-->
 	<div class="form-group row">
-	<label for="submit">Submit</label>
-	<button>Submit</button>
+	<div class="col-sm-12">
+	<button  type="submit" style="margin-right:15px"  class="btn btn-primary pull-right pullRight">Submit</button>
+
+	</div>
 	</div>
 	<!--Submit Row-->
 </div>
