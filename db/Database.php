@@ -6,26 +6,54 @@
  * Time: 6:28 PM
  */
 
-class Database{
+class Database
+{
+
+    private $host = DB_HOST;
+    private $user = DB_USER;
+    private $password = DB_PASS;
+    private $dbName = DB_NAME;
 
     public $isConnect;
-    protected $databaseConnection;
+    private $databaseConnection;
 
     // connect to database
-    public function __construct($userName="root",$password="",$host="localhost",$dbName="car_plate_program",$options=[]){
-        $this->isConnect=TRUE;
-        try{
-            $this->databaseConnection=new PDO("mysql:host={$host};dnname={$dbName};charset=utf8",$userName,$password,$options);
+    public function __construct()
+    {
+        $dsn = "mysql:host={$this->host};dbname={$this->dbName};charset=utf8";
+
+        $options = array(
+            PDO::ATTR_PERSISTENT => true,
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
+
+        try {
+            $this->databaseConnection = new PDO($dsn, $this->user, $this->password, $options);
+            $this->isConnect = true;
             echo "Connected Successfully";
-        }catch (PDOException $exception){
-           throw new Exception($exception->getMessage());
+
+        } catch (PDOException $exception) {
+            throw new Exception($exception->getMessage());
         }
     }
 
     // disconnect from db
-    public function Disconnect(){
+    public function Disconnect()
+    {
         $this->databaseConnection = NULL;
-        $this->isConnect = FALSE;
+        $this->isConnect = false;
+    }
+
+    // insert row
+    public function insertRow($query, $params = [])
+    {
+        try {
+            $statament = $this->databaseConnection->prepare($query);
+            $statament->execute($params);
+            return TRUE;
+        } catch (PDOException $e) {
+            throw new Exception($e->getMessage());
+        }
     }
 
 }
