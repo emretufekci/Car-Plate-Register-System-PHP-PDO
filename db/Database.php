@@ -22,4 +22,10 @@ class Database{
         }
     }
 
+    // disconnect from db
+    public function Disconnect(){
+        $this->databaseConnection = NULL;
+        $this->isConnect = FALSE;
+    }
+
 }
