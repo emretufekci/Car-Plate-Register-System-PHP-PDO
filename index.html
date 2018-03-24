@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <!-- 
 THIS PROJECT HANDLED ON BY
--EMRE TUFEKCI
+-EMRE TUFEKCI ===> All Bootsrap Functionality and HTML&HTML Comments
 -ERCAN HAVARE
 -SAMED BICER
 -->
 <head>
   
   <title>CarPlate</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  	
+
 	<style>
+
+	body {
+
+		margin-top:6%; 
+	}
 	
 	@media (max-width:480px)
 	{
@@ -36,28 +43,40 @@ THIS PROJECT HANDLED ON BY
 	}
 
 	</style>
+
   </head>
+
 
 <html>
 <body>
 
-	<div class="container">
+	
+	<div class="container col-sm-7">
+	<div class="card">
+	
+	<!-- Form -->
 	<form class="form-horizontal"  action="" method="post">  
-	
-	
+	<!-- Form -->
+
+
 	<div class="row">
 	<div class="col-sm-12">
+	<div class="card-header">
 	<center><h1 class="display-1">Car Plate Program</h1></center>
+	</div>
 	</div>
 	</div>	
 
-	 
+  	
+  	<div class="card-body">	 
+	
+
 	<!--Car Model Row-->
 	<div class="form-group form-group-sm col-sm">
 	<div class="row">
     <label for="carmodel" class="col-sm-4 col-form-label">Car Model</label>
 	<div class="col-sm-12">
-	<input type="text" class="form-control" name="carmodel" id="carmodel" placeholder="Car Model" />
+	<input type="text" class="form-control form-control-lg" name="carmodel" id="carmodel" placeholder="Car Model" />
 	</div>
 	</div>
 	</div>
@@ -70,7 +89,7 @@ THIS PROJECT HANDLED ON BY
 	<div class="row">	
     <label for="carplate" class="col-sm-4 col-form-label">Car Plate</label>
 	<div class="col-sm-12">
-	<input type="text" class="form-control" name="carplate" id="carplate" placeholder="Car Plate" />
+	<input type="text" class="form-control form-control-lg" name="carplate" id="carplate" placeholder="Car Plate" />
 	</div>	
 	</div>
 	</div>
@@ -82,21 +101,107 @@ THIS PROJECT HANDLED ON BY
 	<div class="row">	
     <label for="fullname" class="col-sm-4 col-form-label">Full Name</label>
 	<div class="col-sm-12">
-	<input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname Of the Car Driver" />
+	<input type="text" class="form-control form-control-lg" name="fullname" id="fullname" placeholder="Fullname Of the Car Driver" />
 	</div>
 	</div>
 	</div>
 	<!--Fullname Row-->
   
+
+	<!-- Licence Agreement Check Box -->
+	<center>
+   	<div class="form-group row">
+    <div class="col-sm-12">
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="gridCheck1">
+    <label class="form-check-label" for="gridCheck1">
+    I accepted the  <a href="#" data-toggle="modal" data-target="#ChomarsLicenceModalAgreement">Chomars Software License Terms</a>
+    </label>
+    </div>
+    </div>
+  	</div>
+  	</center>
+
+
+
+  <!-- Modal -->
+<div class="modal fade" id="ChomarsLicenceModalAgreement" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ChomarsLicenceAgreementTitle">Chomars Software Licence Agreement</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+
+        <!-- This paragraph should be filled by samed -->
+      <p>	1. You should confirm this paragraph </p>
+      <p>	2. You should confirm this paragraph </p>
+      <p>	3. You should confirm this paragraph </p>
+      <p>	4. You should confirm this paragraph </p>
+      <p>	5. You should confirm this paragraph </p>
+       	<!-- This paragraph should be filled by samed -->
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+
+
+
+  	<!-- Licence Agreement Check Box -->
+
+	
+	<!-- Card Body -->
+	</div>
+	<!-- Card Body-->
+	
+	
 	<!--Submit Row-->
+	<center>	
+	<div class="card-footer text-muted">
 	<div class="form-group row">
 	<div class="col-sm-12 text-center">
-	<button  type="submit"   class="btn btn-primary">Submit</button>
+	<div class="col-sm-12">
+	<button  type="submit"   class="btn btn-primary btm-lg btn-block">Submit</button>
 	</div>
 	</div>
+	</div>
+  	</div>
+	</center>
 	<!--Submit Row-->
-</div>
-</form>
 
-</body>
-</html>
+
+	<!-- Card -->
+		</div>
+	<!-- Card -->
+	
+
+
+	<!-- Container -->
+		</div>
+	<!-- Container -->
+
+
+
+
+	<!-- Form -->
+		</form>
+	<!-- Form -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+	</body>
+	</html>
