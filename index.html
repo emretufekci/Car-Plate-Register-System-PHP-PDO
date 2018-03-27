@@ -11,35 +11,35 @@ THIS PROJECT HANDLED ON BY
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  	
+  <link rel="stylesheet" href="fa/webfont/css/fontawesome-all.css">
 	<style>
 
 	body {
 
-		margin-top:6%; 
+    background-image: url("BackgroundImages/2.jpg");
+    background-color: #cccccc;
+
+		
 	}
 	
 	@media (max-width:480px)
 	{
-		.display-1
-		{
-		font-size:10vw;
-		}
+		
 	}
 	@media (max-width:720px)
 	{
-		.display-1
-		{
-		font-size:8vw;
-		}
+		
 	}
 		@media (max-width:1024px)
 	{
-		.display-1
-		{
-		font-size:6vw;
-		}
+	
 	}
+	#cardContainer{
+		float:right;
+		margin-top:7%;
+	}
+
+
 
 	</style>
 
@@ -47,20 +47,41 @@ THIS PROJECT HANDLED ON BY
 
 <body>
 	
-	<div class="container col-sm-7">
-	<div class="card">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a style="color:blue;"class="navbar-brand" href="#">Car Plate Register System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Terms</a>
+      </li>
+     
+    </ul>
+    <span class="navbar-text">
+    	<div style="font-size:2em; color:Black">
+		<a href="https://github.com/emretufekci/Car-Plate-Program"><i class="fab fa-github"></i></a>
+	</div>
+
+    </span>
+  </div>
+</nav>
+
+
+
+
+	<div class="container col-sm-5" id="cardContainer">
+	<div class="card w-75">
 	
 	<!-- Form -->
 	<form class="form-horizontal"  action="" method="post">  
 	<!-- Form -->
 
-	<div class="row">
-	<div class="col-sm-12">
-	<div class="card-header">
-	<center><h1 class="display-1">Car Plate Program</h1></center>
-	</div>
-	</div>
-	</div>	
 
   	
   	<div class="card-body">	 
