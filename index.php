@@ -80,7 +80,8 @@ THIS PROJECT HANDLED ON BY
 // database connection
     $database=new Database();
     if ($_POST["register"]==1){
-        
+        $databaseCon=new Database();
+        $save=$databaseCon->insertRow("INSERT INTO car_info()");
 
     }else{
         // if register dows not run
