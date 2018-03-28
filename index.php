@@ -20,6 +20,7 @@ THIS PROJECT HANDLED ON BY
         body {
             background-image: url("BackgroundImages/2.jpg");
             background-color: #cccccc;
+<<<<<<< HEAD
             background-size: cover;
             background-repeat: no-repeat;
             min-height: 100vh;
@@ -27,6 +28,15 @@ THIS PROJECT HANDLED ON BY
             -moz-background-size: cover;
             -o-background-size: cover;
 
+=======
+		background-size: cover;
+background-repeat: no-repeat;
+    min-height: 100vh;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+		
+>>>>>>> afc3160b1db7163a556f6baffc12d1123eaa04e3
         }
 
         @media (max-width: 480px) {
@@ -42,6 +52,7 @@ THIS PROJECT HANDLED ON BY
             float: right;
             margin-top: 3%;
         }
+<<<<<<< HEAD
 
         .navbar {
 
@@ -49,6 +60,14 @@ THIS PROJECT HANDLED ON BY
             filter: alpha(opacity=60);
         }
 
+=======
+	.navbar{
+			
+		opacity: 0.6;
+		filter: alpha(opacity=60); 
+}
+
+>>>>>>> afc3160b1db7163a556f6baffc12d1123eaa04e3
     </style>
 
 </head>
@@ -88,6 +107,7 @@ THIS PROJECT HANDLED ON BY
         $databaseCon = new Database();
         // define variables and set to empty values
         $carModelErr = $carPlateErr = $driverFullNameErr = "";
+
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $driver_full_name = $_POST["full_name"];
             $car_model = $_POST["car_model"];
@@ -137,10 +157,10 @@ THIS PROJECT HANDLED ON BY
                 <!--Car Model Row-->
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
-                        <label for="carmodel" class="col-sm-4 col-form-label">Car Model</label>
+                        <label for="carmodel" class="col-sm-4 col-form-label">Car Model<?php echo $carModelErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_model" id="carmodel"
-                                   placeholder="Car Model"/><?php echo $carModelErr; ?>
+                                   placeholder="Car Model"/>
                         </div>
                     </div>
                 </div>
@@ -150,10 +170,10 @@ THIS PROJECT HANDLED ON BY
                 <!-- Car Plate Row-->
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
-                        <label for="carplate" class="col-sm-4 col-form-label">Car Plate</label>
+                        <label for="carplate" class="col-sm-4 col-form-label">Car Plate<?php echo $carPlateErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_plate" id="carplate"
-                                   placeholder="Car Plate"/><? echo $carPlateErr; ?>
+                                   placeholder="Car Plate"/>
                         </div>
                     </div>
                 </div>
@@ -163,10 +183,10 @@ THIS PROJECT HANDLED ON BY
                 <!--Fullname Row-->
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
-                        <label for="fullname" class="col-sm-4 col-form-label">Full Name</label>
+                        <label for="fullname" class="col-sm-4 col-form-label">Full Name<?php echo $driverFullNameErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="full_name" id="fullname"
-                                   placeholder="Full Name Of the Car Driver"/><?php echo $driverFullNameErr; ?>
+                                   placeholder="Full Name Of the Car Driver"/>
                         </div>
                     </div>
                 </div>
