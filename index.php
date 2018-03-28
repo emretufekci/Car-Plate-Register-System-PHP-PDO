@@ -79,13 +79,12 @@ THIS PROJECT HANDLED ON BY
         <?php
         // database connection
         $database = new Database();
-        if ($_POST["register"] == 1){
-            $databaseCon = new Database();
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+            
             $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
                 [$_POST["full_name"], $_POST["car_model"], $_POST["car_plate"]]);
 
-        }else{
-        // if register dows not run
+        }
 
         ?>
         <!-- Form -->
@@ -196,9 +195,8 @@ THIS PROJECT HANDLED ON BY
                     <div class="form-group row">
                         <div class="col-sm-12 text-center">
                             <div class="col-sm-12">
-                                <button type="submit" name="button" class="btn btn-primary btm-lg btn-block">Register
+                                <button type="submit" name="submitRegister" class="btn btn-primary btm-lg btn-block">Register
                                 </button>
-                                <input type="hidden" name="register" value="1">
                             </div>
                         </div>
                     </div>
@@ -218,7 +216,6 @@ THIS PROJECT HANDLED ON BY
 <!-- Form -->
 </form>
 <!-- Form -->
-<?php } //if register does not run?>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
