@@ -79,6 +79,10 @@ THIS PROJECT HANDLED ON BY
         <?php
         // database connection
         $database = new Database();
+
+        // define variables and set to empty values
+        $carModelErr = $carPlateErr = $fullNameErr="";
+
         if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
             $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
@@ -100,7 +104,7 @@ THIS PROJECT HANDLED ON BY
                         <label for="carmodel" class="col-sm-4 col-form-label">Car Model</label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_model" id="carmodel"
-                                   placeholder="Car Model"/>
+                                   placeholder="Car Model"/><?php echo $carModelErr; ?>
                         </div>
                     </div>
                 </div>
@@ -113,7 +117,7 @@ THIS PROJECT HANDLED ON BY
                         <label for="carplate" class="col-sm-4 col-form-label">Car Plate</label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_plate" id="carplate"
-                                   placeholder="Car Plate"/>
+                                   placeholder="Car Plate"/><? echo $carPlateErr; ?>
                         </div>
                     </div>
                 </div>
@@ -126,7 +130,7 @@ THIS PROJECT HANDLED ON BY
                         <label for="fullname" class="col-sm-4 col-form-label">Full Name</label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="full_name" id="fullname"
-                                   placeholder="Fullname Of the Car Driver"/>
+                                   placeholder="Full Name Of the Car Driver"/><?php echo $fullNameErr; ?>
                         </div>
                     </div>
                 </div>
