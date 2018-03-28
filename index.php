@@ -92,8 +92,26 @@ THIS PROJECT HANDLED ON BY
             if (empty($driver_full_name)) {
                 $driverFullNameErr = "Driver name required!";
             } else {
-
+                //validation
+                $driver_full_name_control=DataInputControl::input_control($driver_full_name);
+                // check if name only contains letters and whitespace
+                if (!preg_match("/^[a-zA-Z ]*$/",$driver_full_name_control)) {
+                    $driverFullNameErr = "Only letters and white space allowed";
+                }
             }
+
+            if(empty($car_model)){
+                $carModelErr="Car model required!";
+            }else{
+                //validation
+                $car_model_control=DataInputControl::input_control($car_model);
+                // check if car model only contains letters and white space
+                if (!preg_match("/^[a-zA-Z ]*$/",$car_model_control)){
+                    $carModelErr="Only letters and white space allowed";
+                }
+            }
+
+            
 
             $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
                 [$_POST["full_name"], $_POST["car_model"], $_POST["car_plate"]]);
