@@ -30,7 +30,7 @@ class Database
         try {
             $this->databaseConnection = new PDO($dsn, $this->user, $this->password, $options);
             $this->isConnect = true;
-            echo "Connected Successfully";
+            //echo "Connected Successfully";
 
         } catch (PDOException $exception) {
             throw new Exception($exception->getMessage());
