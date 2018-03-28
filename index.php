@@ -80,7 +80,7 @@ THIS PROJECT HANDLED ON BY
         // database connection
         $database = new Database();
         if ($_SERVER["REQUEST_METHOD"] == "POST"){
-            
+
             $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
                 [$_POST["full_name"], $_POST["car_model"], $_POST["car_plate"]]);
 
@@ -88,7 +88,7 @@ THIS PROJECT HANDLED ON BY
 
         ?>
         <!-- Form -->
-        <form name="registerForm" class="form-horizontal" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+        <form name="registerForm" class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
             <!-- Form -->
 
 
