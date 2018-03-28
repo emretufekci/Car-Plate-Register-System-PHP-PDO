@@ -2,6 +2,7 @@
 <?php
 include_once("/db/config.php");
 include_once("/db/Database.php");
+include_once("/db/DataInputControl.php");
 ?>
 <!--
 THIS PROJECT HANDLED ON BY
@@ -20,7 +21,7 @@ THIS PROJECT HANDLED ON BY
         body {
             background-image: url("BackgroundImages/2.jpg");
             background-color: #cccccc;
-<<<<<<< HEAD
+            < < < < < < < HEAD
             background-size: cover;
             background-repeat: no-repeat;
             min-height: 100vh;
@@ -28,15 +29,14 @@ THIS PROJECT HANDLED ON BY
             -moz-background-size: cover;
             -o-background-size: cover;
 
-=======
-		background-size: cover;
-background-repeat: no-repeat;
-    min-height: 100vh;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-		
->>>>>>> afc3160b1db7163a556f6baffc12d1123eaa04e3
+        = = = = = = = background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+
+        > > > > > > > afc3160b1db7163a556f6baffc12d1123eaa04e3
         }
 
         @media (max-width: 480px) {
@@ -52,22 +52,35 @@ background-repeat: no-repeat;
             float: right;
             margin-top: 3%;
         }
-<<<<<<< HEAD
 
+        <
+        <
+        <
+        <
+        <
+        <
+        <
+        HEAD
         .navbar {
 
             opacity: 0.6;
             filter: alpha(opacity=60);
         }
 
-=======
-	.navbar{
-			
-		opacity: 0.6;
-		filter: alpha(opacity=60); 
-}
+        =
+        =
+        =
+        =
+        =
+        =
+        =
+        .navbar {
 
->>>>>>> afc3160b1db7163a556f6baffc12d1123eaa04e3
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+        }
+
+        > > > > > > > afc3160b1db7163a556f6baffc12d1123eaa04e3
     </style>
 
 </head>
@@ -113,7 +126,7 @@ background-repeat: no-repeat;
             $car_model = $_POST["car_model"];
             $car_plate = $_POST["car_plate"];
             if (empty($driver_full_name)) {
-                $driverFullNameErr = "Driver name required!";
+                $driverFullNameErr = "*";
             } else {
                 //validation
                 $driver_full_name_control = DataInputControl::input_control($driver_full_name);
@@ -123,7 +136,7 @@ background-repeat: no-repeat;
                 }
             }
             if (empty($car_model)) {
-                $carModelErr = "Car model required!";
+                $carModelErr = "*";
             } else {
                 //validation
                 $car_model_control = DataInputControl::input_control($car_model);
@@ -133,7 +146,7 @@ background-repeat: no-repeat;
                 }
             }
             if (empty($car_plate)) {
-                $carPlateErr = "Car plate required!";
+                $carPlateErr = "*";
             } else {
                 //validation
                 $car_plate_control = DataInputControl::input_control($car_model);
@@ -157,7 +170,8 @@ background-repeat: no-repeat;
                 <!--Car Model Row-->
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
-                        <label for="carmodel" class="col-sm-4 col-form-label">Car Model<?php echo $carModelErr; ?></label>
+                        <label for="carmodel" class="col-sm-4 col-form-label">Car
+                            Model<?php echo $carModelErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_model" id="carmodel"
                                    placeholder="Car Model"/>
@@ -170,7 +184,8 @@ background-repeat: no-repeat;
                 <!-- Car Plate Row-->
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
-                        <label for="carplate" class="col-sm-4 col-form-label">Car Plate<?php echo $carPlateErr; ?></label>
+                        <label for="carplate" class="col-sm-4 col-form-label">Car
+                            Plate<?php echo $carPlateErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_plate" id="carplate"
                                    placeholder="Car Plate"/>
@@ -183,7 +198,8 @@ background-repeat: no-repeat;
                 <!--Fullname Row-->
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
-                        <label for="fullname" class="col-sm-4 col-form-label">Full Name<?php echo $driverFullNameErr; ?></label>
+                        <label for="fullname" class="col-sm-4 col-form-label">Full
+                            Name<?php echo $driverFullNameErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="full_name" id="fullname"
                                    placeholder="Full Name Of the Car Driver"/>

@@ -14,13 +14,13 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="185" column="120" lean-forward="false" selection-start-line="185" selection-start-column="120" selection-end-line="185" selection-end-column="120" />
+            <state relative-caret-position="68">
+              <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#span#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#8413#8420#1#HTML" expanded="true" />
-                <marker date="1522249733815" expanded="true" signature="4593:4665" ph="INSERT INTO car_info... " />
+                <element signature="e#8750#8757#1#HTML" expanded="true" />
+                <marker date="1522249955737" expanded="true" signature="4846:4918" ph="INSERT INTO car_info... " />
               </folding>
             </state>
           </provider>
@@ -146,12 +146,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522205624497</updated>
-      <workItem from="1522205627491" duration="10856000" />
+      <workItem from="1522205627491" duration="11312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10856000" />
+    <option name="totallyTimeSpent" value="11312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -208,14 +208,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/DataInputControl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -224,15 +216,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="185" column="120" lean-forward="false" selection-start-line="185" selection-start-column="120" selection-end-line="185" selection-end-column="120" />
+        <state relative-caret-position="68">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#span#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8413#8420#1#HTML" expanded="true" />
-            <marker date="1522249733815" expanded="true" signature="4593:4665" ph="INSERT INTO car_info... " />
+            <element signature="e#8750#8757#1#HTML" expanded="true" />
+            <marker date="1522249955737" expanded="true" signature="4846:4918" ph="INSERT INTO car_info... " />
           </folding>
         </state>
       </provider>
