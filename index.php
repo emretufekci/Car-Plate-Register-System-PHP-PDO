@@ -22,7 +22,13 @@ THIS PROJECT HANDLED ON BY
 
             background-image: url("BackgroundImages/2.jpg");
             background-color: #cccccc;
-
+		background-size: cover;
+background-repeat: no-repeat;
+    min-height: 100vh;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+		
         }
 
         @media (max-width: 480px) {
@@ -41,7 +47,12 @@ THIS PROJECT HANDLED ON BY
             float: right;
             margin-top: 3%;
         }
-
+	.navbar{
+			
+		opacity: 0.6;
+		filter: alpha(opacity=60); 
+}
+	    
     </style>
 
 </head>
