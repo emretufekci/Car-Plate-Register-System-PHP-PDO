@@ -111,7 +111,16 @@ THIS PROJECT HANDLED ON BY
                 }
             }
 
-            
+            if(empty($car_plate)){
+                $carPlateErr="Car plate required!";
+            }else{
+                //validation
+                $car_plate_control=DataInputControl::input_control($car_model);
+                // check if car model only contains letters and white space
+                if (!preg_match("/^[a-zA-Z ]*$/",$car_plate_control)){
+                    $carPlateErr="Only letters and white space allowed";
+                }
+            }
 
             $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
                 [$_POST["full_name"], $_POST["car_model"], $_POST["car_plate"]]);
