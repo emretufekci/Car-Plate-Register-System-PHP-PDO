@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+include_once("/db/config.php");
+include_once("/db/Database.php");
+?>
 <!--
 THIS PROJECT HANDLED ON BY
 -EMRE TUFEKCI ===> All Bootsrap Functionality and HTML&HTML Comments
@@ -69,7 +73,9 @@ THIS PROJECT HANDLED ON BY
     </span>
   </div>
 </nav>
-
+<?php
+  $database=new Database();
+ ?>
 	<div class="container col-sm-5" id="cardContainer">
 	<div class="card w-75">
 
