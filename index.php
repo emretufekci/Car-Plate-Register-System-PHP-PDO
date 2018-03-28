@@ -39,8 +39,6 @@ THIS PROJECT HANDLED ON BY
 		margin-top:3%;
 	}
 
-
-
 	</style>
 
   </head>
@@ -72,9 +70,6 @@ THIS PROJECT HANDLED ON BY
   </div>
 </nav>
 
-
-
-
 	<div class="container col-sm-5" id="cardContainer">
 	<div class="card w-75">
 
@@ -83,9 +78,7 @@ THIS PROJECT HANDLED ON BY
 	<!-- Form -->
 
 
-
   	<div class="card-body">
-
 
 	<!--Car Model Row-->
 	<div class="form-group form-group-sm col-sm">
