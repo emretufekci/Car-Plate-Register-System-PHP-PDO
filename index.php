@@ -155,8 +155,15 @@ THIS PROJECT HANDLED ON BY
                     $carPlateErr = "Only letters and white space allowed";
                 }
             }
-            $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
-                [$_POST["full_name"], $_POST["car_model"], $_POST["car_plate"]]);
+
+            if (isset($_POST["accepted"])){
+                $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
+                    [$_POST["full_name"], $_POST["car_model"], $_POST["car_plate"]]);
+            }else{
+                echo "Please accept agreement.";
+            }
+
+
         }
         ?>
         <!-- Form -->
@@ -214,7 +221,7 @@ THIS PROJECT HANDLED ON BY
                     <div class="form-group row">
                         <div class="col-sm-12">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1" name="accepted">
                                 <label class="form-check-label" for="gridCheck1">
                                     I accepted the <a href="#" data-toggle="modal"
                                                       data-target="#ChomarsLicenceModalAgreement">Chomars Software
