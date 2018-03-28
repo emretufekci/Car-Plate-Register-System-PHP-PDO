@@ -81,7 +81,8 @@ THIS PROJECT HANDLED ON BY
     $database=new Database();
     if ($_POST["register"]==1){
         $databaseCon=new Database();
-        $save=$databaseCon->insertRow("INSERT INTO car_info()");
+        $save=$databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
+            [$_POST["full_name"],$_POST["car_model"],$_POST["car_plate"]]);
 
     }else{
         // if register dows not run
@@ -99,7 +100,7 @@ THIS PROJECT HANDLED ON BY
 	<div class="row">
     <label for="carmodel" class="col-sm-4 col-form-label">Car Model</label>
 	<div class="col-sm-12">
-	<input type="text" class="form-control form-control-lg" name="carmodel" id="carmodel" placeholder="Car Model" />
+	<input type="text" class="form-control form-control-lg" name="car_model" id="carmodel" placeholder="Car Model" />
 	</div>
 	</div>
 	</div>
@@ -112,7 +113,7 @@ THIS PROJECT HANDLED ON BY
 	<div class="row">
     <label for="carplate" class="col-sm-4 col-form-label">Car Plate</label>
 	<div class="col-sm-12">
-	<input type="text" class="form-control form-control-lg" name="carplate" id="carplate" placeholder="Car Plate" />
+	<input type="text" class="form-control form-control-lg" name="car_plate" id="carplate" placeholder="Car Plate" />
 	</div>
 	</div>
 	</div>
@@ -124,7 +125,7 @@ THIS PROJECT HANDLED ON BY
 	<div class="row">
     <label for="fullname" class="col-sm-4 col-form-label">Full Name</label>
 	<div class="col-sm-12">
-	<input type="text" class="form-control form-control-lg" name="fullname" id="fullname" placeholder="Fullname Of the Car Driver" />
+	<input type="text" class="form-control form-control-lg" name="full_name" id="fullname" placeholder="Fullname Of the Car Driver" />
 	</div>
 	</div>
 	</div>
