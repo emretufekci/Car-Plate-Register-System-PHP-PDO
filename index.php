@@ -17,29 +17,36 @@ THIS PROJECT HANDLED ON BY
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="fa/webfont/css/fontawesome-all.css">
     <style>
-
         body {
-
             background-image: url("BackgroundImages/2.jpg");
             background-color: #cccccc;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
 
         }
 
         @media (max-width: 480px) {
-
         }
 
         @media (max-width: 720px) {
-
         }
 
         @media (max-width: 1024px) {
-
         }
 
         #cardContainer {
             float: right;
             margin-top: 3%;
+        }
+
+        .navbar {
+
+            opacity: 0.6;
+            filter: alpha(opacity=60);
         }
 
     </style>
@@ -78,55 +85,46 @@ THIS PROJECT HANDLED ON BY
     <div class="card w-75">
         <?php
         // database connection
-        $database = new Database();
-
+        $databaseCon = new Database();
         // define variables and set to empty values
         $carModelErr = $carPlateErr = $driverFullNameErr = "";
-
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
             $driver_full_name = $_POST["full_name"];
             $car_model = $_POST["car_model"];
             $car_plate = $_POST["car_plate"];
-
             if (empty($driver_full_name)) {
                 $driverFullNameErr = "Driver name required!";
             } else {
                 //validation
-                $driver_full_name_control=DataInputControl::input_control($driver_full_name);
+                $driver_full_name_control = DataInputControl::input_control($driver_full_name);
                 // check if name only contains letters and whitespace
-                if (!preg_match("/^[a-zA-Z ]*$/",$driver_full_name_control)) {
+                if (!preg_match("/^[a-zA-Z ]*$/", $driver_full_name_control)) {
                     $driverFullNameErr = "Only letters and white space allowed";
                 }
             }
-
-            if(empty($car_model)){
-                $carModelErr="Car model required!";
-            }else{
+            if (empty($car_model)) {
+                $carModelErr = "Car model required!";
+            } else {
                 //validation
-                $car_model_control=DataInputControl::input_control($car_model);
+                $car_model_control = DataInputControl::input_control($car_model);
                 // check if car model only contains letters and white space
-                if (!preg_match("/^[a-zA-Z ]*$/",$car_model_control)){
-                    $carModelErr="Only letters and white space allowed";
+                if (!preg_match("/^[a-zA-Z ]*$/", $car_model_control)) {
+                    $carModelErr = "Only letters and white space allowed";
                 }
             }
-
-            if(empty($car_plate)){
-                $carPlateErr="Car plate required!";
-            }else{
+            if (empty($car_plate)) {
+                $carPlateErr = "Car plate required!";
+            } else {
                 //validation
-                $car_plate_control=DataInputControl::input_control($car_model);
+                $car_plate_control = DataInputControl::input_control($car_model);
                 // check if car model only contains letters and white space
-                if (!preg_match("/^[a-zA-Z ]*$/",$car_plate_control)){
-                    $carPlateErr="Only letters and white space allowed";
+                if (!preg_match("/^[a-zA-Z ]*$/", $car_plate_control)) {
+                    $carPlateErr = "Only letters and white space allowed";
                 }
             }
-
             $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
                 [$_POST["full_name"], $_POST["car_model"], $_POST["car_plate"]]);
-
         }
-
         ?>
         <!-- Form -->
         <form name="registerForm" class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"

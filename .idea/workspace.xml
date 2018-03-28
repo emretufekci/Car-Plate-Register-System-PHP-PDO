@@ -14,43 +14,13 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="116" column="28" lean-forward="true" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
+            <state relative-caret-position="310">
+              <caret line="88" column="51" lean-forward="true" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
               <folding>
-                <marker date="1522219296126" expanded="true" signature="3864:3936" ph="INSERT INTO car_info... " />
-                <marker date="1522219296126" expanded="true" signature="4278:8846" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="4378:4844" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="4416:4821" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="4560:4794" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="4676:4736" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="4983:5446" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="5021:5423" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="5165:5396" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="5281:5341" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="5584:6074" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="5622:6051" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="5766:6024" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="5882:5960" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="6190:6935" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="6239:6909" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="6287:6882" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="6340:6851" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="6519:6816" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="6603:6775" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="7071:8706" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="7238:8683" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="7290:8656" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="7345:7773" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="7436:7511" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="7620:7738" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="7826:8419" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="8474:8625" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="8928:9485" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="8981:9463" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="9030:9440" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="9090:9413" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="9142:9382" ph="..." />
-                <marker date="1522219296126" expanded="true" signature="9260:9347" ph="..." />
+                <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#8027#8034#1#HTML" expanded="true" />
+                <marker date="1522249501879" expanded="true" signature="4210:4282" ph="INSERT INTO car_info... " />
               </folding>
             </state>
           </provider>
@@ -102,7 +72,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="WAMP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -144,7 +114,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bin/php/php7.1.9/php.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -176,35 +146,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522205624497</updated>
-      <workItem from="1522205627491" duration="6963000" />
+      <workItem from="1522205627491" duration="10640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6963000" />
+    <option name="totallyTimeSpent" value="10640000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -256,43 +226,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="116" column="28" lean-forward="true" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
+        <state relative-caret-position="310">
+          <caret line="88" column="51" lean-forward="true" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
           <folding>
-            <marker date="1522219296126" expanded="true" signature="3864:3936" ph="INSERT INTO car_info... " />
-            <marker date="1522219296126" expanded="true" signature="4278:8846" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="4378:4844" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="4416:4821" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="4560:4794" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="4676:4736" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="4983:5446" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="5021:5423" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="5165:5396" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="5281:5341" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="5584:6074" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="5622:6051" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="5766:6024" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="5882:5960" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="6190:6935" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="6239:6909" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="6287:6882" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="6340:6851" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="6519:6816" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="6603:6775" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="7071:8706" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="7238:8683" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="7290:8656" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="7345:7773" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="7436:7511" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="7620:7738" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="7826:8419" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="8474:8625" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="8928:9485" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="8981:9463" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="9030:9440" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="9090:9413" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="9142:9382" ph="..." />
-            <marker date="1522219296126" expanded="true" signature="9260:9347" ph="..." />
+            <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#8027#8034#1#HTML" expanded="true" />
+            <marker date="1522249501879" expanded="true" signature="4210:4282" ph="INSERT INTO car_info... " />
           </folding>
         </state>
       </provider>
