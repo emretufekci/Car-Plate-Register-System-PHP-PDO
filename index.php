@@ -73,14 +73,12 @@ THIS PROJECT HANDLED ON BY
     </span>
   </div>
 </nav>
-<?php
-  $database=new Database();
- ?>
+
 	<div class="container col-sm-5" id="cardContainer">
 	<div class="card w-75">
 
 	<!-- Form -->
-	<form class="form-horizontal"  action="" method="post">
+	<form name="registerForm" class="form-horizontal"  action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 	<!-- Form -->
 
 
