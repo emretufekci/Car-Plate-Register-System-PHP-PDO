@@ -76,7 +76,16 @@ THIS PROJECT HANDLED ON BY
 
 	<div class="container col-sm-5" id="cardContainer">
 	<div class="card w-75">
+<?php
+// database connection
+    $database=new Database();
+    if ($_POST["register"]==1){
+        
 
+    }else{
+        // if register dows not run
+
+?>
 	<!-- Form -->
 	<form name="registerForm" class="form-horizontal"  action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 	<!-- Form -->
@@ -180,7 +189,8 @@ THIS PROJECT HANDLED ON BY
 	<div class="form-group row">
 	<div class="col-sm-12 text-center">
 	<div class="col-sm-12">
-	<button  type="submit"   class="btn btn-primary btm-lg btn-block">Submit</button>
+	<button  type="submit"  name="button"  class="btn btn-primary btm-lg btn-block">Register</button>
+        <input type="hidden" name="register" value="1">
 	</div>
 	</div>
 	</div>
@@ -200,7 +210,7 @@ THIS PROJECT HANDLED ON BY
 	<!-- Form -->
 		</form>
 	<!-- Form -->
-
+<?php } //if register does not run?>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
