@@ -81,9 +81,19 @@ THIS PROJECT HANDLED ON BY
         $database = new Database();
 
         // define variables and set to empty values
-        $carModelErr = $carPlateErr = $fullNameErr="";
+        $carModelErr = $carPlateErr = $driverFullNameErr = "";
 
-        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+            $driver_full_name = $_POST["full_name"];
+            $car_model = $_POST["car_model"];
+            $car_plate = $_POST["car_plate"];
+
+            if (empty($driver_full_name)) {
+                $driverFullNameErr = "Driver name required!";
+            } else {
+
+            }
 
             $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
                 [$_POST["full_name"], $_POST["car_model"], $_POST["car_plate"]]);
@@ -92,7 +102,8 @@ THIS PROJECT HANDLED ON BY
 
         ?>
         <!-- Form -->
-        <form name="registerForm" class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
+        <form name="registerForm" class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"
+              method="post">
             <!-- Form -->
 
 
@@ -130,7 +141,7 @@ THIS PROJECT HANDLED ON BY
                         <label for="fullname" class="col-sm-4 col-form-label">Full Name</label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="full_name" id="fullname"
-                                   placeholder="Full Name Of the Car Driver"/><?php echo $fullNameErr; ?>
+                                   placeholder="Full Name Of the Car Driver"/><?php echo $driverFullNameErr; ?>
                         </div>
                     </div>
                 </div>
@@ -199,7 +210,8 @@ THIS PROJECT HANDLED ON BY
                     <div class="form-group row">
                         <div class="col-sm-12 text-center">
                             <div class="col-sm-12">
-                                <button type="submit" name="submitRegister" class="btn btn-primary btm-lg btn-block">Register
+                                <button type="submit" name="submitRegister" class="btn btn-primary btm-lg btn-block">
+                                    Register
                                 </button>
                             </div>
                         </div>
