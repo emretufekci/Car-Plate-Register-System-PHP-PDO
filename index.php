@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
-include_once("/db/config.php");
-include_once("/db/Database.php");
-include_once("/db/DataInputControl.php");
+include("/db/config.php");
+include("/db/Database.php");
+include("/db/DataInputControl.php");
 ?>
 <!--
 THIS PROJECT HANDLED ON BY
