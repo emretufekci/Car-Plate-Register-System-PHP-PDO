@@ -1,9 +1,7 @@
-<script
-        src="http://code.jquery.com/jquery-3.3.1.slim.js"
-        integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-        crossorigin="anonymous"></script>
 
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
 <?php
 /**
  * Created by PhpStorm.
@@ -128,3 +126,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 }
 ?>
+

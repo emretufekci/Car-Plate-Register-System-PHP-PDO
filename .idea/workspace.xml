@@ -64,30 +64,31 @@
       <file leaf-file-name="Validation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/Validation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="117" column="73" lean-forward="false" selection-start-line="117" selection-start-column="73" selection-end-line="117" selection-end-column="73" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="67" />
               <folding>
-                <marker date="1522589198276" expanded="true" signature="811:962" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="850:946" ph="{...}" />
-                <marker date="1522589198276" expanded="true" signature="1242:1407" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="1281:1391" ph="{...}" />
-                <marker date="1522589198276" expanded="true" signature="1647:1798" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="1686:1782" ph="{...}" />
-                <marker date="1522589198276" expanded="true" signature="2079:2244" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="2118:2228" ph="{...}" />
-                <marker date="1522589198276" expanded="true" signature="2497:2648" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="2536:2632" ph="{...}" />
-                <marker date="1522589198276" expanded="true" signature="2950:3115" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="2989:3099" ph="{...}" />
-                <marker date="1522589198276" expanded="true" signature="3455:3527" ph="INSERT INTO car_info... " />
-                <marker date="1522589198276" expanded="true" signature="3739:3747" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="3739:3901" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="3778:3885" ph="{...}" />
-                <marker date="1522589198276" expanded="true" signature="3953:4114" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="3992:4098" ph="{...}" />
-                <marker date="1522589198276" expanded="true" signature="4327:4480" ph="..." />
-                <marker date="1522589198276" expanded="true" signature="4366:4440" ph="{...}" />
-                <marker date="1522589198276" expanded="true" signature="4366:4464" ph="{...}" />
+                <element signature="e#140#225#0#PHP" expanded="true" />
+                <marker date="1522605073526" expanded="true" signature="688:839" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="727:823" ph="{...}" />
+                <marker date="1522605073526" expanded="true" signature="1119:1284" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="1158:1268" ph="{...}" />
+                <marker date="1522605073526" expanded="true" signature="1524:1675" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="1563:1659" ph="{...}" />
+                <marker date="1522605073526" expanded="true" signature="1956:2121" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="1995:2105" ph="{...}" />
+                <marker date="1522605073526" expanded="true" signature="2374:2525" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="2413:2509" ph="{...}" />
+                <marker date="1522605073526" expanded="true" signature="2827:2992" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="2866:2976" ph="{...}" />
+                <marker date="1522605073526" expanded="true" signature="3332:3404" ph="INSERT INTO car_info... " />
+                <marker date="1522605073526" expanded="true" signature="3616:3624" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="3616:3778" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="3655:3762" ph="{...}" />
+                <marker date="1522605073526" expanded="true" signature="3830:3991" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="3869:3975" ph="{...}" />
+                <marker date="1522605073526" expanded="true" signature="4204:4357" ph="..." />
+                <marker date="1522605073526" expanded="true" signature="4243:4317" ph="{...}" />
+                <marker date="1522605073526" expanded="true" signature="4243:4341" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -204,7 +205,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20028000" />
+    <option name="totallyTimeSpent" value="21468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -609,30 +610,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/Validation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="117" column="73" lean-forward="false" selection-start-line="117" selection-start-column="73" selection-end-line="117" selection-end-column="73" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="67" />
           <folding>
-            <marker date="1522589198276" expanded="true" signature="811:962" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="850:946" ph="{...}" />
-            <marker date="1522589198276" expanded="true" signature="1242:1407" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="1281:1391" ph="{...}" />
-            <marker date="1522589198276" expanded="true" signature="1647:1798" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="1686:1782" ph="{...}" />
-            <marker date="1522589198276" expanded="true" signature="2079:2244" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="2118:2228" ph="{...}" />
-            <marker date="1522589198276" expanded="true" signature="2497:2648" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="2536:2632" ph="{...}" />
-            <marker date="1522589198276" expanded="true" signature="2950:3115" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="2989:3099" ph="{...}" />
-            <marker date="1522589198276" expanded="true" signature="3455:3527" ph="INSERT INTO car_info... " />
-            <marker date="1522589198276" expanded="true" signature="3739:3747" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="3739:3901" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="3778:3885" ph="{...}" />
-            <marker date="1522589198276" expanded="true" signature="3953:4114" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="3992:4098" ph="{...}" />
-            <marker date="1522589198276" expanded="true" signature="4327:4480" ph="..." />
-            <marker date="1522589198276" expanded="true" signature="4366:4440" ph="{...}" />
-            <marker date="1522589198276" expanded="true" signature="4366:4464" ph="{...}" />
+            <element signature="e#140#225#0#PHP" expanded="true" />
+            <marker date="1522605073526" expanded="true" signature="688:839" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="727:823" ph="{...}" />
+            <marker date="1522605073526" expanded="true" signature="1119:1284" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="1158:1268" ph="{...}" />
+            <marker date="1522605073526" expanded="true" signature="1524:1675" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="1563:1659" ph="{...}" />
+            <marker date="1522605073526" expanded="true" signature="1956:2121" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="1995:2105" ph="{...}" />
+            <marker date="1522605073526" expanded="true" signature="2374:2525" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="2413:2509" ph="{...}" />
+            <marker date="1522605073526" expanded="true" signature="2827:2992" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="2866:2976" ph="{...}" />
+            <marker date="1522605073526" expanded="true" signature="3332:3404" ph="INSERT INTO car_info... " />
+            <marker date="1522605073526" expanded="true" signature="3616:3624" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="3616:3778" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="3655:3762" ph="{...}" />
+            <marker date="1522605073526" expanded="true" signature="3830:3991" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="3869:3975" ph="{...}" />
+            <marker date="1522605073526" expanded="true" signature="4204:4357" ph="..." />
+            <marker date="1522605073526" expanded="true" signature="4243:4317" ph="{...}" />
+            <marker date="1522605073526" expanded="true" signature="4243:4341" ph="{...}" />
           </folding>
         </state>
       </provider>
