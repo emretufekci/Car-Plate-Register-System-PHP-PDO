@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         ////////////////////////// was it informations recorded /////////////////////
 
-        //////// did not get a license ////////////////////////////////
+        //////// did not get a license //////////////////////////////////
     } else {
         echo "<script>
 			  	$( document ).ready(function() {
