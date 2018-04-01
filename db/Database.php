@@ -52,7 +52,11 @@ class Database
             $statament->execute($params);
             return TRUE;
         } catch (PDOException $e) {
-            throw new Exception($e->getMessage());
+            echo "<script>
+			  	$( document ).ready(function() {
+                    swal(\"Warning!\", \"Sorry, something goes wrong,error:insertRow\", \"error\");
+                  });
+			  </script>";
         }
     }
 

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <?php
-include("/db/config.php");
-include("/db/Database.php");
-include("/db/DataInputControl.php");
+include "/db/config.php";
+include "/db/Database.php";
+include "/db/DataInputControl.php";
+include "/db/Validation.php"
 ?>
 <!--
 THIS PROJECT HANDLED ON BY
@@ -18,6 +19,11 @@ THIS PROJECT HANDLED ON BY
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="fa/webfont/css/fontawesome-all.css">
     <style>
+
+
+        .errorStar{
+            color: red;
+        }
         body {
             background-image: url("BackgroundImages/2.jpg");
             background-color: #cccccc;
@@ -83,6 +89,8 @@ THIS PROJECT HANDLED ON BY
         > > > > > > > afc3160b1db7163a556f6baffc12d1123eaa04e3
     </style>
 
+
+
 </head>
 
 <body>
@@ -115,57 +123,8 @@ THIS PROJECT HANDLED ON BY
 
 <div class="container col-sm-5" id="cardContainer">
     <div class="card w-75">
-        <?php
-        // database connection
-        $databaseCon = new Database();
-        // define variables and set to empty values
-        $carModelErr = $carPlateErr = $driverFullNameErr = "";
-
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $driver_full_name = $_POST["full_name"];
-            $car_model = $_POST["car_model"];
-            $car_plate = $_POST["car_plate"];
-            if (empty($driver_full_name)) {
-                $driverFullNameErr = "*";
-            } else {
-                //validation
-                $driver_full_name_control = DataInputControl::input_control($driver_full_name);
-                // check if name only contains letters and whitespace
-                if (!preg_match("/^[a-zA-Z ]*$/", $driver_full_name_control)) {
-                    $driverFullNameErr = "Only letters and white space allowed";
-                }
-            }
-            if (empty($car_model)) {
-                $carModelErr = "*";
-            } else {
-                //validation
-                $car_model_control = DataInputControl::input_control($car_model);
-                // check if car model only contains letters and white space
-                if (!preg_match("/^[a-zA-Z ]*$/", $car_model_control)) {
-                    $carModelErr = "Only letters and white space allowed";
-                }
-            }
-            if (empty($car_plate)) {
-                $carPlateErr = "*";
-            } else {
-                //validation
-                $car_plate_control = DataInputControl::input_control($car_model);
-                // check if car model only contains letters and white space
-                if (!preg_match("/^[a-zA-Z ]*$/", $car_plate_control)) {
-                    $carPlateErr = "Only letters and white space allowed";
-                }
-            }
-
-            if (isset($_POST["accepted"])){
-                $save = $databaseCon->insertRow("INSERT INTO car_info(driver_full_name,car_model,car_plate) VALUES(?,?,?)",
-                    [$_POST["full_name"], $_POST["car_model"], $_POST["car_plate"]]);
-            }else{
-                echo "Please accept agreement.";
-            }
 
 
-        }
-        ?>
         <!-- Form -->
         <form name="registerForm" class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"
               method="post">
@@ -178,7 +137,7 @@ THIS PROJECT HANDLED ON BY
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
                         <label for="carmodel" class="col-sm-4 col-form-label">Car
-                            Model<?php echo $carModelErr; ?></label>
+                            Model<span class="errorStar">*</span><?php echo $carModelErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_model" id="carmodel"
                                    placeholder="Car Model"/>
@@ -192,10 +151,10 @@ THIS PROJECT HANDLED ON BY
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
                         <label for="carplate" class="col-sm-4 col-form-label">Car
-                            Plate<?php echo $carPlateErr; ?></label>
+                            Plate<span class="errorStar">*</span><?php echo $carPlateErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_plate" id="carplate"
-                                   placeholder="Car Plate"/>
+                                   placeholder="01 AB 234"/>
                         </div>
                     </div>
                 </div>
@@ -206,7 +165,7 @@ THIS PROJECT HANDLED ON BY
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
                         <label for="fullname" class="col-sm-4 col-form-label">Full
-                            Name<?php echo $driverFullNameErr; ?></label>
+                            Name<span class="errorStar">*</span><?php echo $driverFullNameErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="full_name" id="fullname"
                                    placeholder="Full Name Of the Car Driver"/>
