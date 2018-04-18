@@ -5,61 +5,19 @@
  * Date: 3/22/2018
  * Time: 6:28 PM
  */
+include "config.php";
 
-class Database
-{
+    $host = DB_HOST;
+    $user = DB_USER;
+    $password = DB_PASS;
+    $dbName = DB_NAME;
 
-    private $host = DB_HOST;
-    private $user = DB_USER;
-    private $password = DB_PASS;
-    private $dbName = DB_NAME;
+    //db bağlantısı
+  $host_connect=@mysql_connect($host,$user,$password);
+  	if(!$host_connect) die("Error:Something goes wrong about host".mysql_error());
 
-    public $isConnect;
-    private $databaseConnection;
+  $db_connect=@mysql_select_db($dbName,$host_connect);
+  	if(!$db_connect) die("Error:Something goes wrong about database".mysql_error());
 
-    // connect to database
-    public function __construct()
-    {
-        $dsn = "mysql:host={$this->host};dbname={$this->dbName};charset=utf8";
-
-        $options = array(
-            PDO::ATTR_PERSISTENT => true,
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
-
-        try {
-            $this->databaseConnection = new PDO($dsn, $this->user, $this->password, $options);
-            $this->isConnect = true;
-            //echo "Connected Successfully";
-
-        } catch (PDOException $exception) {
-            throw new Exception($exception->getMessage());
-        }
-    }
-
-    // disconnect from db
-    public function Disconnect()
-    {
-        $this->databaseConnection = NULL;
-        $this->isConnect = false;
-    }
-
-    // insert row
-    public function insertRow($query, $params = [])
-    {
-        try {
-            $statament = $this->databaseConnection->prepare($query);
-            $statament->execute($params);
-            return TRUE;
-        } catch (PDOException $e) {
-            echo "<script>
-			  	$( document ).ready(function() {
-                    swal(\"Warning!\", \"Sorry, something goes wrong,error:insertRow\", \"error\");
-                  });
-			  </script>";
-        }
-    }
-
-}
 
 ?>

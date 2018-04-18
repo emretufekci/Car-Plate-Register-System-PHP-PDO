@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-<?php
-include "/db/config.php";
-include "/db/Database.php";
-include "/db/DataInputControl.php";
-include "/db/Validation.php"
-?>
 <!--
 THIS PROJECT HANDLED ON BY
--EMRE TUFEKCI ===> All Bootsrap Functionality and HTML5&Css3&JS Comments
--ERCAN HAVARE ===> Jquery & php validation.
+-EMRE TUFEKCI ===> All Bootsrap Functionality and HTML&HTML Comments
+-ERCAN HAVARE
 -SAMED BICER
 -->
 <html>
@@ -25,14 +19,24 @@ THIS PROJECT HANDLED ON BY
             color: red;
         }
         body {
-            background-image: url("BackgroundImages/bg-3.jpg");
+            background-image: url("images/bg2.jpg");
             background-color: #cccccc;
+            < < < < < < < HEAD
             background-size: cover;
             background-repeat: no-repeat;
             min-height: 100vh;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
+
+        = = = = = = = background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+
+        > > > > > > > afc3160b1db7163a556f6baffc12d1123eaa04e3
         }
 
         @media (max-width: 480px) {
@@ -49,12 +53,34 @@ THIS PROJECT HANDLED ON BY
             margin-top: 3%;
         }
 
+        <
+        <
+        <
+        <
+        <
+        <
+        <
+        HEAD
         .navbar {
+
             opacity: 0.6;
             filter: alpha(opacity=60);
         }
 
+        =
+        =
+        =
+        =
+        =
+        =
+        =
+        .navbar {
 
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+        }
+
+        > > > > > > > afc3160b1db7163a556f6baffc12d1123eaa04e3
     </style>
 
 
@@ -200,6 +226,7 @@ THIS PROJECT HANDLED ON BY
             <!-- Card Body-->
 
             <!--Submit Row-->
+            <center>
                 <div class="card-footer text-muted">
                     <div class="form-group row">
                         <div class="col-sm-12 text-center">
@@ -211,6 +238,7 @@ THIS PROJECT HANDLED ON BY
                         </div>
                     </div>
                 </div>
+            </center>
             <!--Submit Row-->
 
 
@@ -226,9 +254,14 @@ THIS PROJECT HANDLED ON BY
 </form>
 <!-- Form -->
 
-<script src="js/jquery.min.js"></script>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
+<?php
+	include "db/validation.php";
+?>
 
 </body>
 </html>
