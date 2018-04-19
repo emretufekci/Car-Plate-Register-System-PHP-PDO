@@ -140,7 +140,12 @@ function editFunc(id,carPlate) {
     })
     .then((willDelete) => {
   // sending row id for update
-      window.location='editPage.php?id='+id;
+  if(willDelete){
+    window.location='editPage.php?id='+id;
+  }else{
+    swal("Your record is safe!");
+  }
+
 
     });
 }
@@ -156,7 +161,12 @@ function deleteFunc(id,carPlate) {
   })
   .then((willDelete) => {
 // sending row id for delete
+  if(willDelete){
     window.location='delete.php?id='+id;
+
+  }else{
+    swal("Your record is safe!");
+  }
 
   });
   }
