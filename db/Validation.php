@@ -33,11 +33,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       } else {
           //validation
           $car_model_control = input_control($car_model);
-          // check if car model only contains letters and white space
+          // check if car model only contains letters and blank space
           if (!preg_match("/^[a-zA-Z ]*$/", $car_model_control)) {
               echo "<script>
             $( document ).ready(function() {
-                      swal(\"Warning\",\"Only letters and white space allowed\",\"info\");
+                      swal(\"Warning\",\"Only letters and blank space allowed\",\"info\");
                     });
           </script>";
         }else{
@@ -58,12 +58,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       } else {
           //validation
           $car_plate_control = input_control($car_plate);
-          // check if car model only contains letters and white space
+          // check if car model only contains letters and blank space
           if (!preg_match("/^[a-zA-Z0-9 ]*$/", $car_plate_control)) {
-
               echo "<script>
             $( document ).ready(function() {
-                      swal(\"Warning\",\"Only letters and white space allowed\",\"info\");
+                      swal(\"Warning\",\"Only letters and blank space allowed\",\"info\");
                     });
           </script>";
         }else{
@@ -84,11 +83,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       } else {
           //validation
           $driver_full_name_control = input_control($driver_full_name);
-          // check if name only contains letters and whitespace
+          // check if name only contains letters and blank space
           if (!preg_match("/^[a-zA-Z ]*$/", $driver_full_name_control)) {
               echo  "<script>
             $( document ).ready(function() {
-                      swal(\"Warning\",\"Only letters and white space allowed\",\"info\");
+                      swal(\"Warning\",\"Only letters and blank space allowed\",\"info\");
                     });
           </script>";
         }else{

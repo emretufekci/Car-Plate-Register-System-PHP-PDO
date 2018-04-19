@@ -19,7 +19,7 @@ THIS PROJECT HANDLED ON BY
             color: red;
         }
         body {
-            background-image: url("images/bg2.jpg");
+            background-image: url("BackgroundImages/bg-3.jpg");
             background-color: #cccccc;
             < < < < < < < HEAD
             background-size: cover;
@@ -134,7 +134,7 @@ THIS PROJECT HANDLED ON BY
                             Model<span class="errorStar">*</span><?php //echo $carModelErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_model" id="carmodel"
-                                   placeholder="Car Model"/>
+                                   placeholder="Toyota Corolla WRC"/>
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ THIS PROJECT HANDLED ON BY
                             Plate<span class="errorStar">*</span><?php //echo $carPlateErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_plate" id="carplate"
-                                   placeholder="01 AB 234"/>
+                                   placeholder="EP 345"/>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@ THIS PROJECT HANDLED ON BY
                             Name<span class="errorStar">*</span><?php //echo $driverFullNameErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="full_name" id="fullname"
-                                   placeholder="Full Name Of the Car Driver"/>
+                                   placeholder="Volkan Işık"/>
                         </div>
                     </div>
                 </div>

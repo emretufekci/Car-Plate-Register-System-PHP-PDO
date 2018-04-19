@@ -9,6 +9,14 @@ $( document ).ready(function() {
           swal(\"Goodbye!\", \"See you ".$_SESSION["user"]."\", \"info\");
         });
       </script>";
-header("Refresh: 2; url=index.php");
 ob_end_flush();
 ?>
+
+<script>
+
+setTimeout(function()
+{ 
+     window.location = "index.php"; 
+}, 1000);
+
+</script>

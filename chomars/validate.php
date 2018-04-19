@@ -32,13 +32,13 @@ function checkUserNameFunction($user_name,$password){
 
       //validation
       $user_name_control = input_control($user_name);
-      // check if user_name only contains letters and white space
+      // check if user_name only contains letters and blank space
 
       if (!preg_match("/^[a-zA-Z ]*$/", $user_name_control)) {
 
           echo "<script>
         $( document ).ready(function() {
-                  swal(\"Warning\",\"Only letters and white space allowed\",\"info\");
+                  swal(\"Warning\",\"Only letters and blank space allowed\",\"info\");
                 });
       </script>";
     }else{
@@ -63,12 +63,12 @@ function checkPasswordFunction($user_name,$password){
 
       //validation
       $password_control = input_control($password);
-      // check if name only contains letters and whitespace
+      // check if name only contains letters and blank space
       if (!preg_match("/^[a-zA-Z0-9 ]*$/", $password_control)) {
   
           echo  "<script>
         $( document ).ready(function() {
-                  swal(\"Warning\",\"Only letters and white space allowed\",\"info\");
+                  swal(\"Warning\",\"Only letters and blank space allowed\",\"info\");
                 });
       </script>";
     }else{

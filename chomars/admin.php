@@ -27,7 +27,7 @@ THIS PROJECT HANDLED ON BY
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../fa/webfont/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css"/>
     <style>
         body {
             background-color: #ccccb3;
@@ -54,10 +54,11 @@ THIS PROJECT HANDLED ON BY
         	    letter-spacing: 2px;
         }
 
-        #logout a{
-          font-size: 20px;
+        #logout {
+          font-size: 34px;
           margin-left: 80px;
           color: red;
+          float: right;
         }
     </style>
 
@@ -66,8 +67,10 @@ THIS PROJECT HANDLED ON BY
 </head>
 
 <body>
+<!--<span id="logout"><a href="logout.php">logout!</a></span>-->
+<a href="logout.php" class="btn btn-light btn-lg" id="logout" role="button">Logout</a>
 
-  <h1 class="display-4 text-center border border-light bg-light ">Car Plate Management System <span id="logout"><a href="logout.php">logout!</a></span></h1>
+  <h1 class="display-4 text-center border border-light bg-light ">Car Plate Management System </h1>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">

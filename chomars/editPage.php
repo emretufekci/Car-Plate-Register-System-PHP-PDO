@@ -16,6 +16,7 @@ THIS PROJECT HANDLED ON BY
     <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
     <style>
         body {
+            background-image: url("../BackgroundImages/bg-2.jpg");
             background-color: #ccccb3;
             background-size: cover;
             background-repeat: no-repeat;
@@ -23,7 +24,10 @@ THIS PROJECT HANDLED ON BY
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
+
+
         }
+
         .container {
           margin-top: 5%;
         }
