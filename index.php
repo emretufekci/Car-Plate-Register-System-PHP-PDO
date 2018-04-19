@@ -131,7 +131,7 @@ THIS PROJECT HANDLED ON BY
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
                         <label for="carmodel" class="col-sm-4 col-form-label">Car
-                            Model<span class="errorStar">*</span><?php echo $carModelErr; ?></label>
+                            Model<span class="errorStar">*</span><?php //echo $carModelErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_model" id="carmodel"
                                    placeholder="Car Model"/>
@@ -145,7 +145,7 @@ THIS PROJECT HANDLED ON BY
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
                         <label for="carplate" class="col-sm-4 col-form-label">Car
-                            Plate<span class="errorStar">*</span><?php echo $carPlateErr; ?></label>
+                            Plate<span class="errorStar">*</span><?php //echo $carPlateErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="car_plate" id="carplate"
                                    placeholder="01 AB 234"/>
@@ -159,7 +159,7 @@ THIS PROJECT HANDLED ON BY
                 <div class="form-group form-group-sm col-sm">
                     <div class="row">
                         <label for="fullname" class="col-sm-4 col-form-label">Full
-                            Name<span class="errorStar">*</span><?php echo $driverFullNameErr; ?></label>
+                            Name<span class="errorStar">*</span><?php //echo $driverFullNameErr; ?></label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control form-control-lg" name="full_name" id="fullname"
                                    placeholder="Full Name Of the Car Driver"/>
@@ -260,7 +260,7 @@ THIS PROJECT HANDLED ON BY
 <script src="js/bootstrap.min.js"></script>
 
 <?php
-	include "db/validation.php";
+	include("db/validation.php"); 
 ?>
 
 </body>

@@ -1,0 +1,14 @@
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/sweetalert.min.js"></script>
+<?php
+ob_start();
+session_start();
+session_destroy();
+echo "<script>
+$( document ).ready(function() {
+          swal(\"Goodbye!\", \"See you ".$_SESSION["user"]."\", \"info\");
+        });
+      </script>";
+header("Refresh: 2; url=index.php");
+ob_end_flush();
+?>

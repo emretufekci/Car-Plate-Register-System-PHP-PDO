@@ -8,7 +8,7 @@
  * Time: 8:40 PM
  */
 
-include "../db/database.php";
+include ("../db/database.php");
 // define variables and set to empty values
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -20,29 +20,29 @@ checkUserNameFunction($user_name,$password);
 
 function checkUserNameFunction($user_name,$password){
   /////////////////  check if user_name does not fill //////////////////////
-  echo "test2";
+
   if (empty($user_name)) {
-    echo "test3";
+
       echo "<script>
         $( document ).ready(function() {
                   swal(\"Warning\",\"User name is required!\",\"info\");
                 });
       </script>";
   } else {
-    echo "test4";
+
       //validation
       $user_name_control = input_control($user_name);
       // check if user_name only contains letters and white space
-      echo "test5";
+
       if (!preg_match("/^[a-zA-Z ]*$/", $user_name_control)) {
-        echo "test6";
+
           echo "<script>
         $( document ).ready(function() {
                   swal(\"Warning\",\"Only letters and white space allowed\",\"info\");
                 });
       </script>";
     }else{
-      echo "test7";
+
       checkPasswordFunction($user_name,$password);
     }
   }
@@ -52,7 +52,7 @@ function checkUserNameFunction($user_name,$password){
 
 function checkPasswordFunction($user_name,$password){
   /////////////////  check if password does not fill //////////////////////
-  echo "test8";
+
   if (empty($password)) {
       echo "<script>
         $( document ).ready(function() {
@@ -60,30 +60,26 @@ function checkPasswordFunction($user_name,$password){
                 });
       </script>";
   } else {
-    echo "test9";
+
       //validation
       $password_control = input_control($password);
       // check if name only contains letters and whitespace
       if (!preg_match("/^[a-zA-Z0-9 ]*$/", $password_control)) {
-        echo "test10";
+  
           echo  "<script>
         $( document ).ready(function() {
                   swal(\"Warning\",\"Only letters and white space allowed\",\"info\");
                 });
       </script>";
     }else{
-      //session_start();
-      //ob_start();
-      echo " $user_name -> $password";
 
-      echo "test11";
       $query=mysql_query("SELECT * FROM chomars_admin WHERE username='".$user_name."' and password='".$password."'") or die (mysql_error());
       $result=mysql_fetch_array($query);
 
       if($result['permission']==1){
-        session_start();
-        ob_start();
+        @session_start();
         $_SESSION["admin"]=true;
+        $_SESSION["user"]=$result["username"];
 
         echo "<script>
           function waitPage(){
@@ -99,14 +95,14 @@ function checkPasswordFunction($user_name,$password){
               </script>";
 
               echo "<script>
-                setTimeout('waitPage()',2000);
+                setTimeout('waitPage()',3000);
               </script>";
 
 
       }else{
         echo "<script>
         $( document ).ready(function() {
-                  swal(\"Welcome!\", \"Sorry, you are not admin.\", \"error\");
+                  swal(\"Stop!\", \"Sorry, you are not admin.\", \"error\");
                 });
               </script>";
       }

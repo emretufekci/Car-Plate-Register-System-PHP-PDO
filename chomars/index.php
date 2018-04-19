@@ -3,8 +3,8 @@
 <!--
 THIS PROJECT HANDLED ON BY
 -EMRE TUFEKCI ===> All Bootsrap Functionality and HTML&HTML Comments
--ERCAN HAVARE
--SAMED BICER
+-ERCAN HAVARE ===> All Backend Functionality and Javascript Warnings
+-SAMED BICER  ===> Documentation
 -->
 <html>
 <head>
@@ -142,7 +142,7 @@ THIS PROJECT HANDLED ON BY
 
 
 <?php
-	include "validate.php";
+	include ("validate.php");
 ?>
 
 </body>

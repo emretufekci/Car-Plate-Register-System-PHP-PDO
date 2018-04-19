@@ -1,14 +1,13 @@
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/sweetalert.min.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/sweetalert.min.js"></script>
 <?php
 /**
  * Created by PhpStorm.
  * User: Ercan Havare
- * Date: 4/1/2018
+ * Date: 4/19/2018
  * Time: 9:39 AM
  */
 
-include("database.php");
 // define variables and set to empty values
 $carModelErr = $carPlateErr = $driverFullNameErr = "";
 
@@ -16,6 +15,7 @@ $carModelErr = $carPlateErr = $driverFullNameErr = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+echo "test1";
     $driver_full_name = $_POST["full_name"];
     $car_model = $_POST["car_model"];
     $car_plate = $_POST["car_plate"];
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           if (!preg_match("/^[a-zA-Z ]*$/", $car_model_control)) {
               echo "<script>
             $( document ).ready(function() {
-                      swal(\"Warning\",\"Only letters and white space allowed\",\"info\");
+                      swal(\"Warning\",\"Only letters and white space allowed #1\",\"info\");
                     });
           </script>";
         }else{
@@ -92,24 +92,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     });
           </script>";
         }else{
-          checkLicenceAcceptedFunction($car_model,$car_plate,$driver_full_name);
+          checkUpdatedAcceptedFunction($car_model,$car_plate,$driver_full_name);
         }
       }
       /////////////////  check if full name does not fill //////////////////////
     }
 
-    function checkLicenceAcceptedFunction($car_model,$car_plate,$driver_full_name){
+    function checkUpdatedAcceptedFunction($car_model,$car_plate,$driver_full_name){
       /////////////////  check if licence agree //////////////////////
-      if (isset($_POST["accepted"])) {
-          //////// if licence agree, record it into database ////////////////////////////////
+      if (isset($_POST["update"])) {
+          //////// if update agree, update it record ////////////////////////////////
           $table="car_info";
-          $save = sprintf("INSERT INTO %s (driver_full_name,car_model,car_plate) VALUES('%s','%s','%s')",
-                        $table,$driver_full_name,$car_model,$car_plate);
-          //////////////////// was it informations recorded ///////////////////
+          $save = sprintf("UPDATE $table SET driver_full_name='%s',car_model='%s',car_plate='%s' WHERE id='%s'",
+                        $driver_full_name,$car_model,$car_plate,$_POST['update']);
+          //////////////////// was it informations updated ///////////////////
               if (mysql_query($save)){
                   echo "<script>
             $( document ).ready(function() {
-                      swal(\"Good job!\", \"Your information recorded.\", \"success\");
+                      swal(\"Good job!\", \"Your information updated.\", \"success\");
                     });
           </script>";
               }else{
@@ -119,18 +119,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     });
           </script>";
               }
-          ////////////////////////// was it informations recorded /////////////////////
+          ////////////////////////// was it informations updated /////////////////////
 
           //////// did not get a license //////////////////////////////////
       } else {
           echo "<script>
             $( document ).ready(function() {
-                      swal(\"Warning\",\"Please accept agreement!\",\"info\");
+                      swal(\"Warning\",\"Something goes wrong #000!\",\"info\");
                     });
           </script>";
       }
-      //////// did not get a license ////////////////////////////////
-      /////////////////  check if licence agree //////////////////////
+      //////// did not get a update ////////////////////////////////
+      /////////////////  check if update agree //////////////////////
     }
 
     function input_control($data)

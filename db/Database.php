@@ -5,7 +5,8 @@
  * Date: 3/22/2018
  * Time: 6:28 PM
  */
-include "config.php";
+
+include("config.php");
 
     $host = DB_HOST;
     $user = DB_USER;
