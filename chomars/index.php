@@ -15,7 +15,7 @@ THIS PROJECT HANDLED ON BY
     <link rel="stylesheet" href="../fa/webfont/css/fontawesome-all.css">
     <style>
         body {
-            background-image: url("../images/bg1.jpeg");
+            background-image: url("../BackgroundImages/bg-1.jpg");
             background-color: #cccccc;
             background-size: cover;
             background-repeat: no-repeat;
